@@ -81,6 +81,7 @@
     <Compile Include="Controllers\AdministradorUsuarios\ControllerAdduser.cs" />
     <Compile Include="Controllers\AdministradorUsuarios\ControllerAdminUsuarios.cs" />
     <Compile Include="Controllers\Books\ControllerBooks.cs" />
+    <Compile Include="Controllers\Categorias\ControllerCategorias.cs" />
     <Compile Include="Controllers\ControllerInit.cs" />
     <Compile Include="Controllers\Dashboard\ControllerDashboard.cs" />
     <Compile Include="Controllers\FirstUse\ControllerCreateFirstUser.cs" />
@@ -95,11 +96,13 @@
     <Compile Include="Controllers\Server\ControllerConfirmPassword.cs" />
     <Compile Include="Models\DAO\DAOAdminUsers.cs" />
     <Compile Include="Models\DAO\DAOBooks.cs" />
+    <Compile Include="Models\DAO\DAOCategorias.cs" />
     <Compile Include="Models\DAO\DAOFirstUse.cs" />
     <Compile Include="Models\DAO\DAOLogin.cs" />
     <Compile Include="Models\dbContext.cs" />
     <Compile Include="Models\DTO\DTOAdminUsers.cs" />
     <Compile Include="Models\DTO\DTOBooks.cs" />
+    <Compile Include="Models\DTO\DTOCategorias.cs" />
     <Compile Include="Models\DTO\DTOdbContext.cs" />
     <Compile Include="Models\DTO\DTOFirstUse.cs" />
     <Compile Include="Models\DTO\DTOLogin.cs" />
@@ -123,6 +126,12 @@
     </Compile>
     <Compile Include="Views\Books\ViewBooks.Designer.cs">
       <DependentUpon>ViewBooks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Categorias\ViewCategorias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Categorias\ViewCategorias.Designer.cs">
+      <DependentUpon>ViewCategorias.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\Dashboard\ViewDashboard.cs">
       <SubType>Form</SubType>
@@ -238,6 +247,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Books\ViewBooks.resx">
       <DependentUpon>ViewBooks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Categorias\ViewCategorias.resx">
+      <DependentUpon>ViewCategorias.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Dashboard\ViewDashboard.resx">
       <DependentUpon>ViewDashboard.cs</DependentUpon>

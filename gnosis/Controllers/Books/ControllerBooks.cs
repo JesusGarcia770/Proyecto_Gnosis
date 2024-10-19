@@ -29,6 +29,10 @@ namespace gnosis.Controllers.Books
             vista.picAgregarAlmacenamiento.Click += new EventHandler(AbrirPanelAuxiliar);
             vista.picAgregarAutor.Click += new EventHandler(AbrirPanelAuxiliar);
             vista.btnCerrarPanelAuxiliar.Click += new EventHandler(CerrarPanelAuxiliar);
+            vista.btnGuardarProveedor.Click += new EventHandler(GuardarProveedor);
+            vista.btnGuardarAutor.Click += new EventHandler(GuardarAutor);
+            vista.btnGuardarAlmacenamiento.Click += new EventHandler(GuardarAlmacenamiento);
+            vista.btnGuardarCategoriaLibro.Click += new EventHandler(GuardarCategoria);
         }
 
         void AbrirPanelAuxiliar(object sender, EventArgs e)
@@ -244,6 +248,106 @@ namespace gnosis.Controllers.Books
             objVista.cmbProveedor.SelectedIndex = 0;
             objVista.cmbAutor.SelectedIndex = 0;
             objVista.cmbAlmacenamiento.SelectedIndex = 0;
+            objVista.txtProveedor.Text = string.Empty;
+            objVista.txtCategoriaLibro.Text = string.Empty;
+            objVista.txtAutor.Text = string.Empty;
+            objVista.txtAlmacenamiento.Text = string.Empty;
+        }
+    
+        void GuardarProveedor(object sender, EventArgs e)
+        {
+            if (!(string.IsNullOrEmpty(objVista.txtProveedor.Text.Trim())))
+            {
+                DAOBooks DaoInsert = new DAOBooks();
+                DaoInsert.ProviderName = objVista.txtProveedor.Text.Trim();
+                int retorno = DaoInsert.RegistrarProveedor();
+                if (retorno == 1)
+                {
+                    MessageBox.Show("El Proveedor fue registrado exitosamente", "Proceso completado", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    LlenarComboProveedores();
+                    LimpiarCampos();
+                }
+                else if (retorno == 0)
+                {
+                    MessageBox.Show("El Proveedor no pudo ser registrado", "Proceso incompleto", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Datos faltantes, complete el formulario con la información requerida", "Datos faltantes", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+        void GuardarAutor(object sender, EventArgs e)
+        {
+            if (!(string.IsNullOrEmpty(objVista.txtAutor.Text.Trim())))
+            {
+                DAOBooks DaoInsert = new DAOBooks();
+                DaoInsert.AutorName = objVista.txtAutor.Text.Trim();
+                int retorno = DaoInsert.RegistrarAutor();
+                if (retorno == 1)
+                {
+                    MessageBox.Show("El Autor fue registrado exitosamente", "Proceso completado", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    LlenarComboAutores();
+                    LimpiarCampos();
+                }
+                else if (retorno == 0)
+                {
+                    MessageBox.Show("El Autor no pudo ser registrado", "Proceso incompleto", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Datos faltantes, complete el formulario con la información requerida", "Datos faltantes", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+        void GuardarAlmacenamiento(object sender, EventArgs e)
+        {
+            if (!(string.IsNullOrEmpty(objVista.txtAlmacenamiento.Text.Trim())))
+            {
+                DAOBooks DaoInsert = new DAOBooks();
+                DaoInsert.StorageName = objVista.txtAlmacenamiento.Text.Trim();
+                int retorno = DaoInsert.RegistrarAlmacenamiento();
+                if (retorno == 1)
+                {
+                    MessageBox.Show("El Almacenamiento fue registrado exitosamente", "Proceso completado", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    LlenarComboAlmacenamiento();
+                    LimpiarCampos();
+                }
+                else if (retorno == 0)
+                {
+                    MessageBox.Show("El Almacenamiento no pudo ser registrado", "Proceso incompleto", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Datos faltantes, complete el formulario con la información requerida", "Datos faltantes", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+        void GuardarCategoria(object sender, EventArgs e)
+        {
+            if (!(string.IsNullOrEmpty(objVista.txtCategoriaLibro.Text.Trim())))
+            {
+                DAOBooks DaoInsert = new DAOBooks();
+                DaoInsert.CategoryName = objVista.txtCategoriaLibro.Text.Trim();
+                int retorno = DaoInsert.RegistrarCategoria();
+                if (retorno == 1)
+                {
+                    MessageBox.Show("La Categoria fue registrado exitosamente", "Proceso completado", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    LlenarComboCategorias();
+                    LimpiarCampos();
+                }
+                else if (retorno == 0)
+                {
+                    MessageBox.Show("La Categoria no pudo ser registrado", "Proceso incompleto", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Datos faltantes, complete el formulario con la información requerida", "Datos faltantes", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
     }
 }

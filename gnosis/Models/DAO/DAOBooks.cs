@@ -246,5 +246,90 @@ namespace gnosis.Models.DAO
                 command.Connection.Close();
             }
         }
+
+        public int RegistrarProveedor()
+        {
+            try
+            {
+                command.Connection = getConnection();
+                string queryInsert = "INSERT INTO tbProvider VALUES (@param1)";
+                SqlCommand cmdInsert = new SqlCommand(queryInsert, command.Connection);
+                cmdInsert.Parameters.AddWithValue("param1", ProviderName);
+                return cmdInsert.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"{ex.Message} No se pudo registrar el proveedor, verifique su conexión a internet o que los servicios esten activos", "Error de inserción", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return -1;
+            }
+            finally
+            {
+                command.Connection.Close();
+            }
+        }
+
+        public int RegistrarAutor()
+        {
+            try
+            {
+                command.Connection = getConnection();
+                string queryInsert = "INSERT INTO tbAuthor VALUES (@param1)";
+                SqlCommand cmdInsert = new SqlCommand(queryInsert, command.Connection);
+                cmdInsert.Parameters.AddWithValue("param1", AutorName);
+                return cmdInsert.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"{ex.Message} No se pudo registrar el Autor, verifique su conexión a internet o que los servicios esten activos", "Error de inserción", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return -1;
+            }
+            finally
+            {
+                command.Connection.Close();
+            }
+        }
+
+        public int RegistrarAlmacenamiento()
+        {
+            try
+            {
+                command.Connection = getConnection();
+                string queryInsert = "INSERT INTO tbstorage VALUES (@param1)";
+                SqlCommand cmdInsert = new SqlCommand(queryInsert, command.Connection);
+                cmdInsert.Parameters.AddWithValue("param1", StorageName);
+                return cmdInsert.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"{ex.Message} No se pudo registrar el Almacenamiento, verifique su conexión a internet o que los servicios esten activos", "Error de inserción", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return -1;
+            }
+            finally
+            {
+                command.Connection.Close();
+            }
+        }
+
+        public int RegistrarCategoria()
+        {
+            try
+            {
+                command.Connection = getConnection();
+                string queryInsert = "INSERT INTO tbCategory VALUES (@param1, param2)";
+                SqlCommand cmdInsert = new SqlCommand(queryInsert, command.Connection);
+                cmdInsert.Parameters.AddWithValue("param1", CategoryName);
+                cmdInsert.Parameters.AddWithValue("param2", Description);
+                return cmdInsert.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"{ex.Message} No se pudo registrar la Categoria, verifique su conexión a internet o que los servicios esten activos", "Error de inserción", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return -1;
+            }
+            finally
+            {
+                command.Connection.Close();
+            }
+        }
     }
 }

@@ -7,6 +7,7 @@ using gnosis.Views.Server;
 using gnosis.Controllers.Helper;
 using gnosis.Views.Login;
 using gnosis.Views.Books;
+using gnosis.Views.Categorias;
 
 namespace gnosis.Controllers.Dashboard
 {
@@ -29,6 +30,7 @@ namespace gnosis.Controllers.Dashboard
             ObjDashboard.menuAdministradorUsuarios.Click += new EventHandler(AbrirFormularioAdminUsuarios);
             ObjDashboard.btnAdminUser.Click += new EventHandler(AbrirFormularioAdminUsuarios);
             ObjDashboard.btnBook.Click += new EventHandler(AbrirFormularioLibros);
+            ObjDashboard.categoriasToolStripMenuItem.Click += new EventHandler(AbrirFormularioCategorias);
             //ObjDashboard.picAdminuser.Click += new EventHandler(AbrirFormularioAdminUsuarios);
             ObjDashboard.cerrarFormularioToolStripMenuItem.Click += new EventHandler(CerrarForm);
             ObjDashboard.FormClosing += new FormClosingEventHandler(cerrarPrograma);
@@ -108,6 +110,11 @@ namespace gnosis.Controllers.Dashboard
         private void AbrirFormularioLibros(object sender, EventArgs e)
         {
             AbrirFormulario<ViewBooks>();
+        }
+
+        private void AbrirFormularioCategorias(object sender, EventArgs e)
+        {
+            AbrirFormulario<ViewCategorias>();
         }
 
         private void CargarFormPred(object sender, EventArgs e)

@@ -17,6 +17,11 @@ namespace gnosis.Models.DTO
         private int autorId;
         private int almacenamientoId;
         private int categoriaId;
+        private string providerName;
+        private string autorName;
+        private string storageName;
+        private string categoryName;
+        private string description;
 
         public int IdLibro { get => idLibro; set => idLibro = value; }
         public string NombreLibro { get => nombreLibro; set => nombreLibro = value; }
@@ -27,5 +32,10 @@ namespace gnosis.Models.DTO
         public int AutorId { get => autorId; set => autorId = value; }
         public int AlmacenamientoId { get => almacenamientoId; set => almacenamientoId = value; }
         public int CategoriaId { get => categoriaId; set => categoriaId = value; }
+        public string ProviderName { get => providerName; set => providerName = value; }
+        public string AutorName { get => autorName; set => autorName = value; }
+        public string StorageName { get => storageName; set => storageName = value; }
+        public string CategoryName { get => categoryName; set => categoryName = value; }
+        public string Description { get => description; set => description = value; }
     }
 }

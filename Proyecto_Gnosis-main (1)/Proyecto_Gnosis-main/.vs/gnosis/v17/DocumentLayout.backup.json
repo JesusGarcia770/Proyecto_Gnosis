@@ -7,12 +7,12 @@
       "RelativeMoniker": "D:0:0:{4CA5D638-8370-43DD-8C1B-33F5F7F59CB7}|gnosis\\gnosis.csproj|solutionrelative:gnosis\\controllers\\dashboard\\controllerdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4CA5D638-8370-43DD-8C1B-33F5F7F59CB7}|gnosis\\gnosis.csproj|c:\\users\\jesus\\downloads\\proyecto_gnosis-main (1)\\proyecto_gnosis-main\\gnosis\\views\\categoriasbooks\\viewcategoriasbooks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{4CA5D638-8370-43DD-8C1B-33F5F7F59CB7}|gnosis\\gnosis.csproj|solutionrelative:gnosis\\views\\categoriasbooks\\viewcategoriasbooks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{4CA5D638-8370-43DD-8C1B-33F5F7F59CB7}|gnosis\\gnosis.csproj|c:\\users\\jesus\\downloads\\proyecto_gnosis-main (1)\\proyecto_gnosis-main\\gnosis\\views\\dashboard\\viewdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{4CA5D638-8370-43DD-8C1B-33F5F7F59CB7}|gnosis\\gnosis.csproj|solutionrelative:gnosis\\views\\dashboard\\viewdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CA5D638-8370-43DD-8C1B-33F5F7F59CB7}|gnosis\\gnosis.csproj|c:\\users\\jesus\\downloads\\proyecto_gnosis-main (1)\\proyecto_gnosis-main\\gnosis\\views\\categoriasbooks\\viewcategoriasbooks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4CA5D638-8370-43DD-8C1B-33F5F7F59CB7}|gnosis\\gnosis.csproj|solutionrelative:gnosis\\views\\categoriasbooks\\viewcategoriasbooks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -52,14 +52,14 @@
               "RelativeDocumentMoniker": "gnosis\\Controllers\\Dashboard\\ControllerDashboard.cs",
               "ToolTip": "C:\\Users\\Jesus\\Downloads\\Proyecto_Gnosis-main (1)\\Proyecto_Gnosis-main\\gnosis\\Controllers\\Dashboard\\ControllerDashboard.cs",
               "RelativeToolTip": "gnosis\\Controllers\\Dashboard\\ControllerDashboard.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAQwB8AAAAoAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIEAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-30T22:25:20.337Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "ViewDashboard.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\Jesus\\Downloads\\Proyecto_Gnosis-main (1)\\Proyecto_Gnosis-main\\gnosis\\Views\\Dashboard\\ViewDashboard.cs",
               "RelativeDocumentMoniker": "gnosis\\Views\\Dashboard\\ViewDashboard.cs",
@@ -71,7 +71,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "ViewCategoriasBooks.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\Jesus\\Downloads\\Proyecto_Gnosis-main (1)\\Proyecto_Gnosis-main\\gnosis\\Views\\CategoriasBooks\\ViewCategoriasBooks.cs",
               "RelativeDocumentMoniker": "gnosis\\Views\\CategoriasBooks\\ViewCategoriasBooks.cs",

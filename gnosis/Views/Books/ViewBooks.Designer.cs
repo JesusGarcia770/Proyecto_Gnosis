@@ -133,7 +133,7 @@
             this.panelTop.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.panelTop.Name = "panelTop";
             this.panelTop.Padding = new System.Windows.Forms.Padding(12);
-            this.panelTop.Size = new System.Drawing.Size(1250, 49);
+            this.panelTop.Size = new System.Drawing.Size(1028, 49);
             this.panelTop.TabIndex = 0;
             // 
             // label1
@@ -546,7 +546,7 @@
             this.panelGrid.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelGrid.Location = new System.Drawing.Point(408, 49);
             this.panelGrid.Name = "panelGrid";
-            this.panelGrid.Size = new System.Drawing.Size(842, 602);
+            this.panelGrid.Size = new System.Drawing.Size(620, 602);
             this.panelGrid.TabIndex = 2;
             // 
             // dgvLibros
@@ -562,7 +562,7 @@
             this.dgvLibros.ReadOnly = true;
             this.dgvLibros.RowHeadersVisible = false;
             this.dgvLibros.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvLibros.Size = new System.Drawing.Size(842, 602);
+            this.dgvLibros.Size = new System.Drawing.Size(620, 602);
             this.dgvLibros.TabIndex = 0;
             this.dgvLibros.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvLibros_CellClick);
             // 
@@ -607,7 +607,7 @@
             this.panelAuxiliar.BackColor = System.Drawing.Color.White;
             this.panelAuxiliar.Controls.Add(this.panelContentsFormsAuxiliar);
             this.panelAuxiliar.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panelAuxiliar.Location = new System.Drawing.Point(1035, 49);
+            this.panelAuxiliar.Location = new System.Drawing.Point(813, 49);
             this.panelAuxiliar.Name = "panelAuxiliar";
             this.panelAuxiliar.Padding = new System.Windows.Forms.Padding(5);
             this.panelAuxiliar.Size = new System.Drawing.Size(215, 602);
@@ -834,7 +834,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1250, 651);
+            this.ClientSize = new System.Drawing.Size(1028, 651);
             this.Controls.Add(this.panelAuxiliar);
             this.Controls.Add(this.panelGrid);
             this.Controls.Add(this.panelForm);
